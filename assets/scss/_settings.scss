@@ -1,0 +1,176 @@
+ul,ol,p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    font-family: 'TT Norms';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #282828;
+    background: #F5F5F5;
+}
+
+
+.button{
+    display: inline-block;
+    background: #3FAC3B;
+    border-radius: 50px;
+    padding: 20px 45px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .3s all ease;
+
+    &:hover{
+        background-color: #308D2C;
+        box-shadow: inset 0px -4px 1px #00AF47;
+    }
+
+    &:active{
+        background: #555555;
+        box-shadow: inset 0px -4px 1px #282828;
+    }
+
+    &.button_small{
+        padding: 13px 38px;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    &.button_outline{
+        border: 1px solid #3FAC3B;
+        background-color: #fff;
+        color: #3FAC3B;
+
+        &:hover{
+            background-color: #3FAC3B;
+            color: #fff;
+        }
+    }
+
+    &.button_long{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        padding: 15px 19px;
+    }
+
+    &.button_big{
+        .phone_qqes{
+            padding: 10px 18px;
+        }
+    }
+    @media #{$smallTab}{
+        padding: 20px 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+.modal{
+    
+    .modal-body{
+        padding: 40px;
+        @media #{$smallTab}{
+            padding: 30px 20px;
+        }
+    }
+    .btn-close{
+        position: absolute;
+        right: -20px;
+        top: -20px;
+        height: 40px;
+        width: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    .portfolio_modal{
+        .modal_title{
+            text-align: center;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 41px;
+            color: #282828;
+            margin-bottom: 28px;
+        }
+
+        .big_image{
+            margin-bottom: 28px;
+            padding: 0 30px;
+            img{
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+
+        .small_images{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                flex: 0 0 auto;
+                width: calc(50% - 16px);
+                border-radius: 15px;
+                height: 100px;
+                object-fit: cover;
+            }
+        }
+
+        .portfolio_info{
+            padding: 45px 0 45px 48px;
+            border-left: 1px solid #282828;
+
+            .portfolio_text{
+                font-size: 18px;
+                line-height: 21px;
+                margin-bottom: 32px;
+            }
+
+            .portfolio_action{
+                display: flex;
+                gap: 0 32px;
+                .button{
+                    text-transform: uppercase;
+                }
+
+                @media #{$smallTab}{
+                    flex-wrap: wrap;
+                    gap: 20px 0;
+                }
+            }
+
+            @media #{$bigTab}{
+                border-left: none;
+                padding: 30px 0 0 0;
+            }
+        }
+    }
+
+    @media #{$laptop}{
+        .modal-dialog{
+            max-width: 100%;
+            margin: 30px;
+        }
+    }
+
+    @media #{$smallTab}{
+        .modal-dialog{
+            margin: 15px;
+        }
+    }
+}
+
+

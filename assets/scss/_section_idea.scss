@@ -1,0 +1,101 @@
+.idea{
+
+    padding: 100px 0;
+
+    .container{
+        background-image: url(../images/idea.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+    }
+    
+    .right_idea{
+
+        margin-top: 89px;
+        padding-left: 60px;
+
+        .title{
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 127.52%;
+            color: #282828;
+        }
+
+        .description{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+            margin-top: 42px;
+            align-items: center;
+            gap: 0 20px;
+            &::before{
+                content: '';
+                display: flex;
+                height: 3px;
+                width: 87px;
+                background-color: #3FAC3B;
+            }
+        }
+
+        .pay_money{
+            margin-top: 42px;
+            gap: 0 16px;
+
+            .text_money{
+                font-size: 20px;
+                line-height: 127.52%;
+                color: #282828;
+            }
+
+            ul{
+                gap: 0 16px;
+                li{
+                    list-style: none;
+                }
+            }
+        }
+
+        form{
+            margin-top: 25px;
+            flex-direction: column;
+            
+            input{
+                padding: 20px 133px;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 50px;
+                border: none;
+
+                &::placeholder{
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #D8D8D8;
+                }
+            }
+
+            .button_bottom{
+                .button_idea{
+                    margin-top: 25px;
+                    padding: 20px 113px;
+                    background: #3FAC3B;
+                    box-shadow: inset 0px -4px 1px #00AF47;
+                    border-radius: 50px;
+                    font-weight: 800;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    border: none;
+                    text-align: center;   
+                }
+            }
+        }
+    }
+
+    .book_ideal{
+        margin-top: 89px;
+        padding-left: 57px;
+    }
+}

@@ -1,0 +1,83 @@
+.extra_services{
+    
+    .section_title{
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 41px;
+        color: #282828;
+        margin-bottom: 105px;
+    }
+
+    .row{
+        gap: 30px 0;
+    }
+
+    .service_item{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 315px;
+        padding: 0 18px 36px 18px;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 10px;
+        background-position: center;
+        overflow: hidden;
+        transition: .3s all ease;
+
+        .service_name{
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 117.52%;
+            margin-bottom: 12px;
+            z-index: 10;
+            @media #{$smallTab}{
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+        }
+
+        .service_description{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 117.52%;
+            z-index: 10;
+            @media #{$smallTab}{
+                font-size: 16px;
+            }
+        }
+
+        &::before{
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: linear-gradient(90deg, rgba(8, 84, 102, 0.47) 18.23%, rgba(34, 34, 34, 0) 100%);
+            left: 0;
+            top: 0;
+        }
+
+        &::after{
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: rgb(0, 0, 0, .5);
+            left: 0;
+            top: 0;
+        }
+
+        @media #{$tab}{
+            height: 250px;
+        }
+        
+        &:hover{
+            background-size: 110%;
+        }
+    }
+}

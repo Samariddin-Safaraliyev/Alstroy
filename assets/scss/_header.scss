@@ -1,0 +1,133 @@
+header{
+    padding: 20px 0 64px 0;
+
+    .about{
+        max-width: 200px;
+    }
+
+    .find_in_map{
+        max-width: 200px;
+        gap: 0 8px;
+
+        .find_text{
+            a{
+                font-size: 11px;
+                color: #3FAC3B;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .social_network{
+        .ask_question{
+            margin-bottom: 2px;
+            font-size: 10px;
+            line-height: 12px;
+            color: #969696;
+        }
+
+        ul{
+            list-style: none;
+            gap: 0 6px;
+        }
+    }
+
+    .call{
+        position: relative;
+        padding: 0 12px;
+        .text{
+            font-size: 10px;
+            line-height: 12px;
+            color: #282828;
+            margin-bottom: 2px;
+
+            &::before{
+                content: '';
+                display: block;
+                width: 5px;
+                height: 5px;
+                background: rgba(0, 175, 71, 0.3);
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                animation: pulse-animation 2s infinite;
+            }
+
+            &::after{
+                content: '';
+                display: block;
+                border-radius: 50%;
+                position: absolute;
+                left: 1px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 3px;
+                height: 3px;
+                background: #00AF47;
+                animation: pulse-animation 2s infinite;
+                animation-delay: 2s;
+            }
+        }
+
+        .phone{
+            a{
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 18px;
+                color: inherit;
+                text-decoration: none;
+
+                @media #{$smallTab}{
+                    font-size: 13px;
+                    line-height: 13px;
+                }
+            }
+        }
+    }
+
+    @keyframes pulse-animation {
+        0% {
+          box-shadow: 0 0 0 0px rgba(0, 175, 71, 0.2);
+        }
+        100% {
+          box-shadow: 0 0 0 10px rgba(0, 175, 71, 0.4);
+        }
+    }
+
+    @media #{$bigTab}{
+        .d-flex{
+            flex-wrap: wrap;
+            gap: 15px 0;
+
+            .column{
+                flex: 0 0 auto;
+                width: 30%;
+            }
+        }
+    }
+
+    @media #{$tab}{
+        padding-bottom: 0;
+
+        .column{
+            &:nth-child(2),
+            &:nth-child(3){
+                display: none;
+            }
+        }
+    }
+
+    @media #{$smallTab}{
+
+        .d-flex{
+            justify-content: center !important;
+            .column{
+                width: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+footer{
+    .container{
+        background: #555555;
+        color: #fff;
+    }
+    .item_footer{
+        padding: 10px;
+        justify-content: space-between;
+
+        .text_footer{
+            font-size: 13px;
+            line-height: 119.52%;
+        }
+
+        .kiber{
+            font-size: 15px;
+            line-height: 119.52%;
+        }
+
+        .pol_kof{
+            .konfidialnost{
+                color: #fff;
+                font-size: 15px;
+                line-height: 119.52%;                                      
+            }
+        }
+    }
+}

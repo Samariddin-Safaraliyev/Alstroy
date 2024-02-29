@@ -1,0 +1,188 @@
+.quizz{
+
+    padding: 65px 0 136px 0;
+
+    .quizz_center{
+        text-align: center;
+        margin-bottom: 115px;
+        .quizz_title{
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 41px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .quiz_block{
+
+        background: rgba(205, 205, 205, 0.3);
+        border-radius: 20px;
+        .quizz_pad{
+            padding: 93px;
+
+            .quizz_question{
+                margin-bottom: 40px;
+            }
+
+            .quizz_slide{
+                gap: 0 20px;
+                margin-bottom: 40px;
+                .quizz_button{
+                    background: #969696;
+                    border: 1px solid #000000;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 100px;
+                    width: 74px;
+                    height: 12px;
+
+                    &:first-child{
+                        background-color: #3FAC3B;
+                    }
+                }
+            }
+
+            .quizz_project{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                margin-bottom: 40px;
+            }
+
+            .block_image{
+                margin-bottom: 40px;
+                gap: 0 48px;
+                text-align: center;
+                .image_quiz{
+                    border-radius: 5px;
+                    a{
+                        img{
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+
+                .btn_quiz{
+                    font-size: 13px;
+                    line-height: 15px;
+                }
+            }
+
+            .quizz_option{
+                gap: 0 32px;
+                .quizz_comfort{
+                    position: relative;
+                    padding: 0 32px;
+                    .option_title{
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 18px;
+                    }
+                    
+                    .quizz_click{
+                        font-weight: 200;
+                        font-size: 13px;
+                        line-height: 15px;
+                    }
+
+                    &::before{
+                        content: '';
+                        display: block;
+                        border-radius: 50%;
+                        position: absolute;
+                        width: 15px;
+                        height: 15px;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        background: rgba(0, 175, 71, 0.3);
+                        animation: pulse-animation 2s infinite;
+                    }
+
+                    &::after{
+                        content: '';
+                        display: block;
+                        border-radius: 50%;
+                        width: 9px;
+                        height: 9px;
+                        left: 3px;
+                        top: 12px;
+                        bottom: 0;
+                        background: #3FAC3B;
+                        position: absolute;
+                        animation: pulse-animation 2s infinite;
+                    }
+                }
+            }
+        }
+    }
+
+    .quiz_block_right{
+        background: #282728;
+        align-items: center;
+        border-radius: 20px;
+        color: #FFFFFF;
+
+        .item_quizz_right{
+            padding: 27px 40px;
+
+
+            .right_ques{
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 18px;
+                color: #FFFFFF;
+            }
+
+            .right_desc{
+                margin-bottom: 16px;
+            }
+
+            a{
+                img{
+                    margin: 16px 0;
+                    align-items: center;
+                }
+            }
+
+            .project_men{
+                margin-bottom: 16px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 18px;
+                text-align: center;
+            }
+
+            .button_big{
+                text-decoration: none;
+                color: #FFFFFF;
+                cursor: pointer;
+                .phone_qqes{
+                    background: #3FAC3B;
+                    border-radius: 50px;
+                    text-align: center;
+
+                    .text_call{
+                        font-size: 10px;
+                        line-height: 12px;
+                        text-align: center;
+                    }
+
+                    .tell_for{
+                        gap: 0 10px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 175, 71, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 10px rgba(0, 175, 71, 0.4);
+    }
+}

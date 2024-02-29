@@ -1,0 +1,28 @@
+.helper_instrument{
+    padding: 0 0 100px 0;
+
+    .title_help{
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 117.52%;
+        text-align: center;
+        color: #282828;
+        margin-bottom: 140px;
+    }
+
+    .help_item{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        .help_text{
+            padding: 0 20px;
+            margin: 32px 0;
+            font-size: 25px;
+            line-height: 117.52%;
+            color: #282828;
+        }
+        a{
+            margin-bottom: 20px;
+        }
+    }
+}

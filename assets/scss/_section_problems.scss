@@ -1,0 +1,65 @@
+.problems{
+
+    padding: 0 0 100px 0;
+    .container{
+        background-image: url(../images/bg_problems.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
+    .home_png{
+        border-radius: 10px;
+    }
+
+    .company{
+
+        .text_company{
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 104.52%;
+            color: #282828;
+            margin-bottom: 50px;
+        }
+
+        .mini{
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 41px;
+            text-align: center;
+            color: #282828;
+            gap: 0 24px;
+            margin-bottom: 50px;
+
+            &::before{
+                content: '';
+                display: block;
+                width: 70px;
+                height: 3px;
+                background-color: #282828;
+                
+            }
+        }
+
+        .company_item{
+            .item_comp{
+                gap: 0 16px;
+            }
+
+            .company_problems{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                color: #282828;
+            }
+
+
+
+            &:nth-child(2n){
+                margin: 50px 0;
+            }
+        }
+
+    }
+
+    
+}

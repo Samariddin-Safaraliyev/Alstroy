@@ -1,0 +1,40 @@
+.individual{
+    padding: 0 0 100px 0;
+    .container{
+        background-image: url(../images/ind_bg1.jpg);
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+
+    .text_ind{
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 41px;
+        color: #282828;
+        padding: 106px 0 155px 0;
+    }
+
+    .ind_img{
+        img{
+            border-radius: 15px;
+            overflow: hidden;
+        }
+    }
+
+    .ind_right{
+        position: relative;
+        .ind_title{
+            font-size: 18px;
+            line-height: 21px;
+            text-align: justify;
+            margin-bottom: 32px;
+        }
+
+        img{
+            position: absolute;
+            top: 100px;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}

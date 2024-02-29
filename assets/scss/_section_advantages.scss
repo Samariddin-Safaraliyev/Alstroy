@@ -1,0 +1,138 @@
+.advantages{
+    padding: 0 0 100px 0;
+    .title{
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 104.52%;
+        color: #282828;
+        margin-bottom: 36px;
+
+        @media #{$tab}{
+            font-size: 24px;
+            line-height: 26px;
+        }
+
+        @media #{$smallTab}{
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+
+    .description{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 117.52%;
+        color: #000000;
+        margin-bottom: 165px;
+
+        @media #{$tab}{
+            margin-bottom: 65px;
+        }
+    }
+
+    .nav-tabs{
+        padding: 16px 10px;
+        border: 1px solid rgba(205, 205, 205, 0.6);
+        border-radius: 15px;
+
+        .nav-item{
+            border-bottom: 1px dashed #C1C1C1;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            width: 100%;
+
+            .nav-link{
+                width: 100%;
+                padding: 13px 10px;
+                display: flex;
+                align-items: center;
+                text-align: left;
+                gap: 0 8px;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 18px;
+                color: #555555;
+                border: none;
+                border-radius: 10px;
+
+                &.active{
+                    background: rgba(0, 175, 71, 0.3);
+                }
+
+                @media #{$bigTab}{
+                    height: 100%;
+                }
+            }
+
+            &:last-child{
+                margin-bottom: 0;
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+
+            @media #{$bigTab}{
+                width: 50%;
+            }
+        }
+
+        @media #{$bigTab}{
+            margin-bottom: 40px;
+        }
+
+        @media #{$tab}{
+            display: none;
+        }
+    }
+
+    .tab-content{
+        .tab-pane{
+            .tab_content{
+                gap: 0 10px;
+
+                .tab_title{
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 104.52%;
+                    color: #282828;
+                }
+
+                p{
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 119.02%;
+                }
+
+                .tab_content_right{
+                    flex: 0 0 40%;
+                    img{
+                        border-radius: 20px;
+                        width: 100%;
+                        position: sticky;
+                        top: 20px;
+                        margin-bottom: 20px;
+
+                        @media #{$smallTab}{
+                            height: 200px;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+
+                    @media #{$smallTab}{
+                        flex: 0 0 100%;
+                    }
+                }
+
+                @media #{$smallTab}{
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+
+        @media #{$tab}{
+            display: block !important;
+            opacity: 1;
+            margin-bottom: 40px;
+        }
+    } 
+}
